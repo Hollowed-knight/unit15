@@ -1,0 +1,29 @@
+@import url('universal.css');
+
+.main, .side {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(33,95,154,0.10);
+  padding: 2rem 2rem 1.5rem 2rem;
+  margin: 0;
+  flex: 1 1 340px;
+  min-width: 320px;
+  max-width: 540px;
+  border: 2px solid #215F9A;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main h2, .side h2 {
+  color: #215F9A;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #156082;
+}

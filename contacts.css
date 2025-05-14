@@ -1,0 +1,107 @@
+@import url('universal.css');
+
+.main {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(33,95,154,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 420px;
+  border: 2px solid #215F9A;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.main h2 {
+  color: #215F9A;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 500;
+  color: #156082;
+  margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.7rem;
+  border: 1.5px solid #215F9A;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7fafd;
+  color: #156082;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1.5px solid #4EA72E;
+  outline: none;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  accent-color: #4EA72E;
+  margin-right: 0.5em;
+}
+
+input[type="submit"] {
+  background: linear-gradient(90deg, #215F9A 60%, #4EA72E 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(33,95,154,0.08);
+}
+
+input[type="submit"]:hover {
+  background: #156082;
+}
+
+.email-link {
+  display: block;
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #fff;
+  background: #4EA72E;
+  padding: 0.7rem 0;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.email-link:hover {
+  background: #215F9A;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}

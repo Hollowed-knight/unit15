@@ -3,86 +3,16 @@
 <head>
 <title>Contacts Page</title>
 <meta name="veiwport" content="width=device-width, initial-scale=1">
-
-<style>
-* {
-box-sizing:border-box;
-}
-
-body {
-font-family: Calibri;
-margin:0;
-}
-
-
-header {
-display:flex;
-background-color: #215F9A;
-padding: 5px;
-text-align: center;
-color: #FFFFFF;
-height:100px;
-border: 1px solid black;
-}
-
-nav {
-display:flex;
-background-color: #215F9A;
-border: 1px solid black;
-border-bottom: 0px solid black;
-}
-
-nav a {
-color:black;
-padding:20px;
-text-decoration:none;
-border: 2px solid black;
-} 
-
-nav a:hover {
-background-color:#ddd;
-color:#1AADE1;
-}
-
-section {
-display:flex;
-height: 450px;
-flex-wrap:wrap;
-border: 1px solid black;
-}
-
-.main {
-flex:50%;
-background-color: #cccfff;
-padding:20px;
-border: 2px solid black;
-align-content: middle;
-}
-
-footer {
-background-color: #000000;
-padding: 10px;
-text-align:center;
-color: white;
-}
-
-@media screen and (max-width: 700px) {
-	nav, section { 
-		flex-direction: column
-	}
-}
-
-</style>
+<link rel="stylesheet" href="contacts.css">
 </head>
 <body>
-
 <header>
-	<table>
-		<tr>
-			<th bgcolor="#4EA72E" ><img src ="html photo.png" height = 80px></th>
-			<th><h1>Contacts Page</h1></th>
-		</tr>
-	</table>
+    <table>
+        <tr>
+            <th><img src="html photo.png" height="80px"></th>
+            <th><h1>Contacts Page</h1></th>
+        </tr>
+    </table>
 </header>
 
 <nav>
@@ -95,28 +25,27 @@ color: white;
 <a href="contacts page.html">Contacts Page</a>
 </nav>
 
-<section align="middle">
+<section>
 <div class="main">
 <h2>Contact</h2>
-<form align="middle">
-		First Name
-		<input type="text" placeholder="First name...">
-		<br><br>Email Address
-		<input type="text" placeholder="Email address...">
-		<br><br>Message</td>
-		<textarea>Message here...</textarea>
-		<br><br>Recieve Email
-		<input type="checkbox">
-		<br><br>&nbsp;
-		<input type="submit" value="Submit">
-	</form>
-	<a href="mailto:30079885@student.ekcgroup.ac.uk" >Send Email</a>
+<form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" placeholder="First name..." required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Email address..." required>
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Message here..." required></textarea>
+    <label>
+        <input type="checkbox"> Receive Email
+    </label>
+    <input type="submit" value="Submit">
+</form>
+<a class="email-link" href="mailto:30079885@student.ekcgroup.ac.uk">Send Email</a>
 </div>
 </section>
 
 <footer>
 Copyright &copy;2025 
 </footer>
-
 </body>
 </html>

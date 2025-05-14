@@ -1,0 +1,28 @@
+@import url('universal.css');
+
+section {
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+
+table {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(33,95,154,0.10);
+  border: 2px solid #215F9A;
+  overflow: hidden;
+}
+
+td, th {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  color: #156082;
+  border: none;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(33,95,154,0.10);
+}
