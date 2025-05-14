@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Errors and Fixes</title>
+<meta name="veiwport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+box-sizing:border-box;
+}
+
+body {
+font-family: Calibri;
+margin:0;
+}
+
+
+header {
+display:flex;
+background-color: #215F9A;
+padding: 5px;
+text-align: center;
+color: #FFFFFF;
+height:100px;
+border: 1px solid black;
+}
+
+nav {
+display:flex;
+background-color: #215F9A;
+border: 1px solid black;
+border-bottom: 0px solid black;
+}
+
+nav a {
+color:black;
+padding:20px;
+text-decoration:none;
+border: 2px solid black;
+} 
+
+nav a:hover {
+background-color:#ddd;
+color:#1AADE1;
+}
+
+section {
+display:flex;
+height: 450px;
+flex-wrap:wrap;
+border: 1px solid black;
+}
+
+.side {
+flex:50%;
+background-color:#cccfff;
+padding:20px;
+border: 2px solid black;
+}
+
+.main {
+flex:50%;
+background-color: #cccfff;
+padding:20px;
+border: 2px solid black;
+}
+
+.right {
+flex:50%;
+background-color: #cccfff;
+padding:20px;
+border: 2px solid black;
+}
+
+.left {
+flex:50%;
+background-color: #cccfff;
+padding:20px;
+border: 2px solid black;
+}
+
+footer {
+background-color: #000000;
+padding: 10px;
+text-align:center;
+color: white;
+}
+
+@media screen and (max-width: 700px) {
+	nav, section { 
+		flex-direction: column
+	}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+	<table>
+		<tr>
+			<th bgcolor="#4EA72E" ><img src ="html photo.png" height = 80px></th>
+			<th><h1>HTML Errors and Fixes</h1></th>
+		</tr>
+	</table>
+</header>
+
+<nav>
+<a href="Intro to html.html">An Introduction to HTML</a>
+<a href="html colours.html">H TML Colours</a>
+<a href="html examples.html">HTML Examples</a>
+<a href="html Basics.html">HTML Basics</a>
+<a href="html errors and fixes.html">HTML Errors and Fixes</a>
+<a href="html links and images.html">HTML Links and Images</a>
+<a href="contacts page.html">Contacts Page</a>
+</nav>
+
+<section>
+<div class="main">
+<h2>Main Column</h2>
+<p>Basics</p>
+</div>
+
+<div class="side">
+<h2>SideBar</h2>
+</div>
+
+<div class="left">
+<h2>Errors</h2>
+</div>
+
+<div class="right">
+<h2>Fixes</h2>
+</div>
+
+</section>
+
+<footer>
+Copyright &copy;2025 
+</footer>
+
+</body>
+</html>
